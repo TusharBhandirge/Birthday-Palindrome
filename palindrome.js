@@ -12,21 +12,29 @@ checkButton.addEventListener("click", function check(){
     var flag = false;
 
     clearOutput();
-    flag = checkPalindorme(date);
-    if(!flag){
-        while(!flag){
-            date = nextDate(date);
-            flag = checkPalindorme(date);
-            count = count+1;
+
+    if(date === ""){
+        setMessage("Please select birthdate first.");
+    }else{
+
+        flag = checkPalindorme(date);
+        if(!flag){
+            while(!flag){
+                date = nextDate(date);
+                flag = checkPalindorme(date);
+                count = count+1;
+            }
+        }
+        console.log(flag);
+        if(count ==0 && flag == true){
+            setMessage("your birthday is a palindrome!");
+
+        }else{
+            setMessage("your birthday is not a palindrome, you missed by "+count + "days.");
         }
     }
-    console.log(flag);
-    if(count ==0 && flag == true){
-        setMessage("your birthday is a palindrome!");
 
-    }else{
-        setMessage("your birthday is not a palindrome, you missed by "+count + "days.");
-    }
+    
 
 
 });

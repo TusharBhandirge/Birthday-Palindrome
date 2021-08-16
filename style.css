@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+#cointainer{
+
+   
+    max-width: 600px;
+    margin: auto;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    border: solid 1px;
+}
+
+div{
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+Section{
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+input{
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 0.5rem;
+}
+
+label{
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+h4{
+    margin-top: 5rem;
+}
